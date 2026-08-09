@@ -1,0 +1,21 @@
+{
+  "name": "@fotoowl/media-react",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./src/index.tsx",
+  "types": "./src/index.tsx",
+  "dependencies": {
+    "@fotoowl/media-core": "workspace:^",
+    "@tanstack/react-query": "^5.101.4"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "tsc -b --clean"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.31"
+  }
+}
