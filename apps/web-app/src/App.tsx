@@ -297,7 +297,7 @@ function VideosTab() {
       )}
 
       <div className="video-grid-container">
-        {items.map((item) => (
+        {items.map((item: MediaItem) => (
           <VideoCard key={item.id} item={item} />
         ))}
 

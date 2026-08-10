@@ -1,1 +1,1 @@
-{"root":["./src/index.ts"],"version":"5.9.3"}
+{"version":"7.0.2","root":["./src/index.ts"],"packageJsons":["../../node_modules/.pnpm/@types+prop-types@15.7.15/node_modules/@types/prop-types/package.json","../../node_modules/.pnpm/@types+react@18.3.31/node_modules/@types/react/package.json","../../node_modules/.pnpm/csstype@3.2.3/node_modules/csstype/package.json","../../node_modules/.pnpm/react@18.3.1/node_modules/react/package.json","./package.json"],"missingPackageJsons":["../../node_modules/.pnpm/@types+react@18.3.31/node_modules/prop-types/package.json"]}

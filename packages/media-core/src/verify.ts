@@ -24,7 +24,7 @@ async function runTests() {
     alt: 'Beautiful landscape',
   };
 
-  (global as any).fetch = async (url: string, init: any) => {
+  (globalThis as any).fetch = async (url: string, init: any) => {
     fetchCount++;
 
     const authHeader = init?.headers?.Authorization;
@@ -130,5 +130,5 @@ async function runTests() {
 
 runTests().catch((err) => {
   console.error('Verification tests failed:', err);
-  process.exit(1);
+  (globalThis as any).process?.exit?.(1);
 });
