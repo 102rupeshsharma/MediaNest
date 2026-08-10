@@ -109,7 +109,7 @@ importers:
   packages/media-react:
     dependencies:
       '@fotoowl/media-core':
-        specifier: workspace:^
+        specifier: workspace:*
         version: link:../media-core
       '@tanstack/react-query':
         specifier: ^5.101.4
