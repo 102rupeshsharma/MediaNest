@@ -1,3 +1,7 @@
+**@fotoowl/media-react**
+
+***
+
 # Fotoowl Media Assignment
 
 A React + TypeScript monorepo featuring a headless media SDK and components for a Pexels integration.

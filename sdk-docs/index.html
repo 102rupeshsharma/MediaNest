@@ -1,0 +1,108 @@
+<!DOCTYPE html><html class="default" lang="en" data-base="./"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>@fotoowl/media-react</title><meta name="description" content="Documentation for @fotoowl/media-react"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script defer src="assets/main.js"></script><script async src="assets/icons.js" id="tsd-icons-script"></script><script async src="assets/search.js" id="tsd-search-script"></script><script async src="assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => window.app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar">
+<div class="tsd-toolbar-contents container"><a href="index.html" class="title">@fotoowl/media-react</a>
+<div id="tsd-toolbar-links"></div><button id="tsd-search-trigger" class="tsd-widget" aria-label="Search"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="assets/icons.svg#icon-search"></use></svg></button><dialog id="tsd-search" aria-label="Search"><input role="combobox" id="tsd-search-input" aria-controls="tsd-search-results" aria-autocomplete="list" aria-expanded="true" autocapitalize="off" autocomplete="off" placeholder="Search the docs" maxLength="100"/>
+<ul role="listbox" id="tsd-search-results"></ul>
+<div id="tsd-search-status" aria-live="polite" aria-atomic="true">
+<div>Preparing search index...</div></div></dialog><a href="#" class="tsd-widget menu" id="tsd-toolbar-menu-trigger" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="assets/icons.svg#icon-menu"></use></svg></a></div></header>
+<div class="container container-main">
+<div class="col-content">
+<div class="tsd-page-title">
+<h1>@fotoowl/media-react</h1></div>
+<div class="tsd-panel tsd-typography"><h1 id="fotoowl-media-assignment" class="tsd-anchor-link">Fotoowl Media Assignment<a href="#fotoowl-media-assignment" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h1>
+<p>A React + TypeScript monorepo featuring a headless media SDK and components for a Pexels integration.</p>
+<h2 id="folder-structure" class="tsd-anchor-link">Folder Structure<a href="#folder-structure" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<ul>
+<li><code>apps/web-app</code>: Vite + React + TypeScript web application.</li>
+<li><code>packages/media-core</code>: Framework-agnostic TypeScript SDK for the Pexels API.</li>
+<li><code>packages/media-react</code>: React provider + hooks wrapper around <code>media-core</code>.</li>
+<li><code>packages/media-native</code>: React Native provider + hooks wrapper around <code>media-core</code>.</li>
+<li><code>packages/media-ui-react</code>: React headless components (Grid, Lightbox, Reels).</li>
+<li><code>packages/media-ui-native</code>: React Native headless components (Grid, Lightbox, Reels).</li>
+<li><code>skills/</code>: Guidelines and rules for AI assistants.</li>
+</ul>
+<h2 id="getting-started" class="tsd-anchor-link">Getting Started<a href="#getting-started" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<h3 id="prerequisites" class="tsd-anchor-link">Prerequisites<a href="#prerequisites" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<p>Ensure you have <a href="https://pnpm.io/">pnpm</a> installed.</p>
+<h3 id="setup-and-installation" class="tsd-anchor-link">Setup and Installation<a href="#setup-and-installation" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<ol>
+<li>
+<p>Clone the repository and run <code>pnpm install</code> in the root:</p>
+<pre><code class="bash"><span class="hl-0">pnpm</span><span class="hl-1"> </span><span class="hl-2">install</span>
+</code><button type="button">Copy</button></pre>
+
+</li>
+<li>
+<p>Start the development server:</p>
+<pre><code class="bash"><span class="hl-0">pnpm</span><span class="hl-1"> </span><span class="hl-2">dev</span>
+</code><button type="button">Copy</button></pre>
+
+</li>
+<li>
+<p>Typecheck packages:</p>
+<pre><code class="bash"><span class="hl-0">pnpm</span><span class="hl-1"> </span><span class="hl-2">build</span>
+</code><button type="button">Copy</button></pre>
+
+</li>
+<li>
+<p>Lint code:</p>
+<pre><code class="bash"><span class="hl-0">pnpm</span><span class="hl-1"> </span><span class="hl-2">lint</span>
+</code><button type="button">Copy</button></pre>
+
+</li>
+</ol>
+<h2 id="ai-assisted-work-disclosure" class="tsd-anchor-link">AI-Assisted Work Disclosure<a href="#ai-assisted-work-disclosure" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<p>This project was built with the assistance of agentic AI coding assistants.</p>
+<ul>
+<li><strong>AI-Assisted Features</strong>:
+<ul>
+<li>Scaffolding the workspace, project references, and monorepo structure.</li>
+<li>Designing and implementing the headless wrappers (<code>media-react</code> and <code>media-native</code>).</li>
+<li>Creating the clean headless components hooks and getters in <code>media-ui-react</code>.</li>
+<li>Implementing in-memory caching and request de-duplication within the <code>HttpClient</code> in <code>media-core</code>.</li>
+</ul>
+</li>
+<li><strong>Hand-Written &amp; Refactored Features</strong>:
+<ul>
+<li>Fine-tuning the strict TypeScript compiler configurations.</li>
+<li>Designing the API key fallback screens and environment variable injection hooks.</li>
+<li>Restructuring pagination and transitioning from infinite scroll to responsive grid layouts for photos/videos.</li>
+</ul>
+</li>
+</ul>
+<h2 id="ai-skills-testing" class="tsd-anchor-link">AI Skills Testing<a href="#ai-skills-testing" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<p>We designed and tested two distinct AI skill documents in the <code>skills/</code> directory:</p>
+<ol>
+<li><strong>[wiring-data](file:///c:/Users/rahul/Downloads/fotoowl-media-assignment/skills/wiring-data/SKILL.md)</strong>: Guides the AI on context boundaries, TanStack query setup, and event logger callbacks.</li>
+<li><strong>[using-components](file:///c:/Users/rahul/Downloads/fotoowl-media-assignment/skills/using-components/SKILL.md)</strong>: Instructs the AI on headless prop-getters, pagination hook consumption, and modal accessibility controls.</li>
+</ol>
+<p>Both files were verified in practice by using them to direct the AI assistant during subsequent feature refactoring and web application integration.</p>
+</div></div>
+<div class="col-sidebar">
+<div class="page-menu">
+<div class="tsd-navigation settings">
+<details class="tsd-accordion"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="assets/icons.svg#icon-chevronDown"></use></svg>
+<h3>Settings</h3></summary>
+<div class="tsd-accordion-details">
+<div class="tsd-filter-visibility"><span class="settings-label">Member Visibility</span>
+<ul id="tsd-filter-options">
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div>
+<div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
+<details open class="tsd-accordion tsd-page-navigation"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="assets/icons.svg#icon-chevronDown"></use></svg>
+<h3>On This Page</h3></summary>
+<div class="tsd-accordion-details"><a href="#fotoowl-media-assignment"><span>Fotoowl <wbr/>Media <wbr/>Assignment</span></a>
+<ul>
+<li><a href="#folder-structure"><span>Folder <wbr/>Structure</span></a></li>
+<li><a href="#getting-started"><span>Getting <wbr/>Started</span></a></li>
+<li>
+<ul>
+<li><a href="#prerequisites"><span>Prerequisites</span></a></li>
+<li><a href="#setup-and-installation"><span>Setup and <wbr/>Installation</span></a></li></ul></li>
+<li><a href="#ai-assisted-work-disclosure"><span>AI-<wbr/>Assisted <wbr/>Work <wbr/>Disclosure</span></a></li>
+<li><a href="#ai-skills-testing"><span>AI <wbr/>Skills <wbr/>Testing</span></a></li></ul></div></details></div>
+<div class="site-menu">
+<nav class="tsd-navigation"><a href="modules.html">@fotoowl/media-react</a>
+<ul class="tsd-small-nested-navigation" id="tsd-nav-container">
+<li>Loading...</li></ul></nav></div></div></div><footer>
+<p class="tsd-generator">Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></footer>
+<div class="overlay"></div></body></html>

@@ -1,0 +1,10 @@
+{
+    "entryPoints": [
+        "packages/media-react/src/index.tsx"
+    ],
+    "out": "sdk-docs",
+    "excludePrivate": true,
+    "excludeProtected": true,
+    "readme": "README.md",
+    "plugin": []
+}
