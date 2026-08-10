@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "pnpm --filter @fotoowl/media-core build && pnpm --filter @fotoowl/media-react build && pnpm --filter @fotoowl/media-ui-react build && tsc -b && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
