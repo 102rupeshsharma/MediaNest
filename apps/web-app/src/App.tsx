@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Routes, Route, NavLink } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import {
   MediaProvider,
   useMediaSDK,
@@ -19,10 +19,8 @@ function AppContent() {
       <header>
         <h1>MediaNest</h1>
         <nav className="nav-links">
-          <NavLink to="/" end>
-            Photos
-          </NavLink>
-          <NavLink to="/videos">Videos (Reels)</NavLink>
+          <Link to="/"> Photos </Link>
+          <Link to="/videos">Videos (Reels)</Link>
         </nav>
       </header>
 
