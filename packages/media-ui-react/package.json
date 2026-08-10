@@ -12,6 +12,11 @@
     "clean": "tsc -b --clean"
   },
   "devDependencies": {
-    "@types/react": "^18.3.31"
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "react-dom": "^19.2.8"
   }
 }

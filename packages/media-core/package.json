@@ -14,5 +14,8 @@
   "scripts": {
     "build": "tsc -b",
     "clean": "tsc -b --clean"
+  },
+  "dependencies": {
+    "typescript": "^5.9.3"
   }
 }
