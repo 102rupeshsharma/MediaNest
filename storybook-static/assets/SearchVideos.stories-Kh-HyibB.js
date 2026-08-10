@@ -1,0 +1,21 @@
+import{j as e}from"./jsx-runtime-DFAAy_2V.js";import{r as c}from"./index-Bc2G9s8g.js";import{M as h,c as f,e as m}from"./mockSdk-Dn71j6KJ.js";const y=({item:t})=>{const o=c.useRef(null),[s,n]=c.useState(!1),r=()=>{o.current&&(s?(o.current.pause(),n(!1)):o.current.play().then(()=>n(!0)).catch(()=>n(!1)))};return e.jsxs("div",{style:{position:"relative",overflow:"hidden",borderRadius:"12px",background:"#000",height:"350px",border:"1px solid rgba(255, 255, 255, 0.1)",boxShadow:"0 4px 12px rgba(0,0,0,0.15)"},children:[e.jsx("video",{ref:o,src:t.url,loop:!0,muted:!0,playsInline:!0,poster:t.previewUrl,onClick:r,style:{width:"100%",height:"100%",objectFit:"cover",cursor:"pointer",display:"block"}}),e.jsx("button",{onClick:r,style:{position:"absolute",top:"50%",left:"50%",transform:"translate(-50%, -50%)",background:"rgba(0,0,0,0.6)",border:"none",color:"#fff",borderRadius:"50%",width:"50px",height:"50px",cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"center",fontSize:"20px",transition:"all 0.2s",outline:"none"},children:s?"⏸":"▶"}),e.jsxs("div",{style:{position:"absolute",bottom:0,left:0,right:0,background:"linear-gradient(transparent, rgba(0,0,0,0.85))",padding:"16px",color:"#fff",boxSizing:"border-box"},children:[e.jsx("h3",{style:{margin:"0 0 4px 0",fontSize:"0.95rem",fontWeight:600,color:"#fff",textShadow:"0 1px 2px rgba(0,0,0,0.8)"},children:t.title}),e.jsxs("p",{style:{margin:0,fontSize:"0.8rem",color:"#ccc",textShadow:"0 1px 2px rgba(0,0,0,0.8)"},children:["by ",t.photographer]})]})]})},b=({defaultQuery:t,perPage:o})=>{const[s,n]=c.useState(t),{data:r,isLoading:l,error:a}=m(s,1,o);return e.jsxs("div",{children:[e.jsx("div",{style:{margin:"0 0 20px 0"},children:e.jsx("input",{type:"text",placeholder:"Type to search videos (e.g. nature, ocean)...",value:s,onChange:i=>n(i.target.value),style:{padding:"10px 16px",fontSize:"1rem",borderRadius:"8px",border:"1px solid #ccc",width:"100%",maxWidth:"500px",boxSizing:"border-box",outline:"none",fontFamily:"inherit"}})}),l&&e.jsx("div",{style:{display:"grid",gridTemplateColumns:"repeat(auto-fill, minmax(240px, 1fr))",gap:"20px"},children:Array.from({length:o}).map((i,g)=>e.jsx("div",{className:"skeleton",style:{height:"350px",borderRadius:"12px"}},g))}),a&&e.jsxs("div",{style:{padding:"24px",background:"rgba(239, 68, 68, 0.1)",color:"#ef4444",borderRadius:"8px"},children:["Error: ",a.message]}),!l&&!a&&(r==null?void 0:r.items.length)===0&&e.jsxs("div",{style:{padding:"24px",textAlign:"center",color:"#666"},children:['No videos found matching "',s,'"']}),!l&&!a&&((r==null?void 0:r.items.length)??0)>0&&e.jsx("div",{style:{display:"grid",gridTemplateColumns:"repeat(auto-fill, minmax(240px, 1fr))",gap:"20px"},children:r==null?void 0:r.items.map(i=>e.jsx(y,{item:i},i.id))})]})},k={title:"React SDK/useSearchVideos",decorators:[t=>e.jsx(h,{sdk:f(),children:e.jsxs("div",{style:{padding:"24px",background:"#fff",color:"#000",minHeight:"400px"},children:[e.jsx("h2",{style:{margin:"0 0 8px 0",fontSize:"1.5rem",fontWeight:700},children:"Search Videos Feed"}),e.jsxs("p",{style:{margin:"0 0 24px 0",color:"#666",fontSize:"0.9rem"},children:["Demonstrates search query fetching for reels and video assets via the ",e.jsx("code",{children:"useSearchVideos"})," hook."]}),e.jsx(t,{})]})})],tags:["autodocs"]},d={render:t=>e.jsx(b,{defaultQuery:t.defaultQuery,perPage:t.perPage}),args:{defaultQuery:"nature",perPage:2},argTypes:{defaultQuery:{control:"text",description:"The query to search videos."},perPage:{control:{type:"number",min:1,max:2},description:"Number of videos to fetch."}}};var p,u,x;d.parameters={...d.parameters,docs:{...(p=d.parameters)==null?void 0:p.docs,source:{originalSource:`{
+  render: (args: SearchVideosProps) => <SearchVideosDemo defaultQuery={args.defaultQuery} perPage={args.perPage} />,
+  args: {
+    defaultQuery: 'nature',
+    perPage: 2
+  },
+  argTypes: {
+    defaultQuery: {
+      control: 'text',
+      description: 'The query to search videos.'
+    },
+    perPage: {
+      control: {
+        type: 'number',
+        min: 1,
+        max: 2
+      },
+      description: 'Number of videos to fetch.'
+    }
+  }
+}`,...(x=(u=d.parameters)==null?void 0:u.docs)==null?void 0:x.source}}};const P=["Default"];export{d as Default,P as __namedExportsOrder,k as default};
